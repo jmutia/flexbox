@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  color: #212121;
+}
+
+/*--header styles--*/
+#header {
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+}
+#header div.box-1 {
+  background-color: #212121;
+  border: 1px solid #212121;
+  color: #ffffff;
+}
+#header div.box-2 {
+  background-color: #212121;
+  border: 1px solid #212121;
+  flex-basis: 100%;
+}
+#header ul {
+  box-sizing: border-box;
+  justify-content: flex-end;
+  display: flex;
+  width: inherit;
+}
+#header li {
+  margin: 0;
+  padding-left: 5px;
+  border: 1px solid #212121;
+  list-style: none;
+}
+#header a {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*--main-section styles--*/
+#main-section {
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+}
+#main-section div.box {
+  overflow: hidden;
+  height: 400px;
+}
+#main-section div.box-1 {
+  background: url("../images/about-showcasebg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+#main-section div.box-2 {
+  background: url("../images/projects-showcasebg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+#main-section div.box-3 {
+  background: url("../images/contact-showcasebg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+#main-section div.box h1, #main-section div.box p {
+  padding: 10px;
+  text-align: center;
+}
+
+/*--footer styles--*/
+footer {
+  box-sizing: border-box;
+  background-color: #212121;
+  padding: 0;
+  display: flex;
+}
+footer div.box {
+  background-color: #212121;
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+}
+
+/*--media queries--*/
+@media(max-width: 700px) {
+  #header {
+    display: block;
+  }
+  #header div.box {
+    box-sizing: border-box;
+  }
+  #header div.box-2 {
+    padding: 2px;
+    width: 100%;
+  }
+  #header ul {
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+  }
+  #header li {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  #header a {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  #main-section {
+    display: block;
+  }
+  #main-section div.box {
+    box-sizing: border-box;
+    padding: 2px;
+  }
+
+  #footer div {
+    text-align: center;
+  }
+}

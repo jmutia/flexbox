@@ -91,9 +91,6 @@ footer div.box {
 
 /*--media queries--*/
 @media(max-width: 700px) {
-  body {
-    display: block;
-  }
   #header {
     display: block;
   }
